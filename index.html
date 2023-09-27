@@ -1,0 +1,77 @@
+<DOCTYPE html>
+    <html lang="Fr"> 
+        <head>
+            <title>City Gallery</title>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/style_test.css">
+            <script type="text/javascript" src="js/scripts_test.js"> </script>
+            <script type="text/javascript" src="js/scripts.js"> </script>
+        </head>
+
+    <body onload="Design()">
+        <!--integration of head with css-->
+        <div class="entete">
+            <h1>City Gallery</h1>
+        </div>
+        <!--integration of nemu with css -->
+        <div class="menu"> 
+            <ul>
+                <li onclick="londonClicked()">London</li>
+                <li>Paris</li>
+                <li>Tokyo</li>
+            </ul>
+            <div class="bloc-afficher">
+                <button class="conteneur">Pays</button>
+                <div class="bloc-cacher">
+                    <ul>
+                        <li><a href="#">London </a></li>
+                        <li><a href="#">Paris </a></li>
+                        <li><a href="#">Tokyo </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+         <!-- integration of the text-->
+        <div class="corps">
+            <h1>London</h1>
+
+            <div> 
+                <form  post="" action="" id="subcriptionForm">
+                    <input type="email" name="mail" placeholder="Adresse e-mail ou numéro de téléphone" class="input"/>
+                    <input type="password" name="pwd" placeholder="Mot de passe" class="input"/>
+                    <input type="submit" name="connecter" value="Se connecter" class="connect"  onclick="valider()"/>
+                        <div class="oublier"><a href="#" > mot de passe oublié?</a></div>
+                        <hr class="trait">
+                        <input type="submit" name="creer"  value="Créer nouveau compte" class="creer">
+                </form>
+            </div>
+            <p class="parag">
+                London city is the capital of city England.
+                It is most populous city of United Kingdom,with a metropolitan area of 
+                over 13 millons in habitants.
+            </p>
+             <p id="for"></p>
+            <!-- Le bouton qui encapsule le bloc et l'affichera lorsqu'on cliquera sur celui-ci -->
+             <!-- <button id="myBtn" onclick="showbloc()">modal</button> -->
+             <!-- le conteneur du bloc cachez -->
+            
+            <div id="myModal" class="modal">
+               <!-- le bloc cachez en question -->
+                <div class="modal-affiche">
+                    <span class="close">&times;</span>
+                    <p>je suis le bloc qui dois s'afficher </p>
+                </div>
+            </div>
+        </div>
+
+            
+        <!--integration of footer-->
+        <div class="pied">  
+            <span>Copyright &copy; W3School.com</span>
+        </div>
+        
+    </body>    
+    </html>
